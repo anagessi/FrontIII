@@ -20,7 +20,7 @@ function App() {
       color: color
     }
 
-    if (nameColor.length < 3 || color.length < 6 ) {
+    if (nameColor.length < 3 || color.length < 6) {
 
       setFormularioErro(true)
 
@@ -40,23 +40,29 @@ function App() {
   return (
     <div className="App">
 
-      <h1>Adicionar nova cor</h1>
+      <section className='hadder'>
 
-      <form className={formularioErro ? 'form-error' : ''} onSubmit={cadastrarCor}>
+        <h1>Adicionar nova cor</h1>
 
-        <div>
-          <label htmlFor='name'>Nome</label>
-          <input id='name' type='text' value={nameColor} onChange={event => setNameColor(event.target.value)} />
-        </div>
+        <form className={formularioErro ? 'form-error' : ''} onSubmit={cadastrarCor}>
 
-        <div>
-          <label htmlFor='color'>Cor</label>
-          <input id='color' type='text' value={color} onChange={event => setColor(event.target.value)} />
-        </div>
+          <section className='inputs'>
+            <div>
+              <label htmlFor='name'>Nome</label>
+              <input id='name' type='text' value={nameColor} onChange={event => setNameColor(event.target.value)} />
+            </div>
 
-        <button className='botao' type='submit'>Adicionar</button>
+            <div>
+              <label htmlFor='color' className='color'>Cor</label>
+              <input id='color' type='text' value={color} onChange={event => setColor(event.target.value)} />
+            </div>
+          </section>
 
-      </form>
+          <button className='botao' type='submit'>Adicionar</button>
+
+        </form>
+
+      </section>
 
       {
         formularioErro ? (

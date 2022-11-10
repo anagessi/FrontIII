@@ -2,16 +2,46 @@
     background-color: red;
 }
 
-.App{
+.hadder{
 
     background-color: #202020;
     width: 600px;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 
 }
+
+.inputs{
+    padding-left: 5%;
+    text-align: center;
+}
+
+
+
 
 .botao {
 
     color: white;
     background-color: #36CE7C;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.colors{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card-colors {
+    background-color: #9c9c9c;
+    border-radius: 10px;
+    gap: 10px;
 }
